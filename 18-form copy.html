@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>폼 요소</title>
+</head>
+
+<body>
+  <form action="" method="post" enctype="multipart-formdata">
+    <p>
+    <table>
+      <tr>
+        <th>
+          <label for="user_name">이름</label>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <input id="user_name" name="user_name" type="text" placeholder="이곳에 이름을 쓰시오." minlength="2" maxlength="4">
+          <!-- required는 필수입력사항 -->
+          <!-- readonly는 읽기전용속성 -->
+          <!-- disabled는 비활성화 상태 -->
+        </td>
+      </tr>
+    </table>
+    </p>
+    <p>
+      <label for="user_pass">비밀번호
+        <input type="password" name="user_pass" id="user_pass" placeholder="비밀번호 6자리를 입력해주세요" minlength="6" required
+          maxlength="6" />
+    </p>
+    <p>
+      <label>
+        <input type="radio" name="user_gender" value="1" checked>남성</label>
+      <label>
+        <input type="radio" name="user_gender" value="2">여성</label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="user_agree" id="user_agree">모든 내용을 읽고 동의하십니까?
+      </label>
+    </p>
+    <p>
+      <input type="file" name="user_data" id="user_data" />
+      <!-- input을 file을 추가하려면 form 단락에 enctype="multipart-formdata"를 추가해줘야한다. -->
+    </p>
+    <input type="submit" value="전송">
+    <button type="submit">버튼</button>
+  </form>
+
+</body>
+
+</html>
