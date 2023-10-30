@@ -1,1 +1,23 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼 관련 요소</title>
+</head>
+<body>
+  
+  <form action="서버URL" method="get">
+    <fieldset>
+      <legend>검색</legend>
+      <div>
+        <label for="search">검색어 입력</label>
+        <input type="text" id="search" minlength="3" maxlength="6" />
+      </div>
+      <button type="submit">검색</button>
+      <input type="submit" value="검색"/>
+    </fieldset>
+  </form>
+
+</body>
+</html>
