@@ -1,1 +1,58 @@
-/* CSS 선택자(Selector) */
+/* 전체 선택자 */
+
+* {
+  color: darkblue;
+}
+
+/* 요소 선택자 */
+
+body { 
+	margin: 0 ;
+}
+
+/* 클래스 선택자 */
+
+.fancy {
+  font-weight: bold;
+  text-shadow: 4px 4px 3px #77f;
+}
+
+ul.menu{
+	margin: 0;
+	padding-left: 0;
+  background: yellow;
+}
+
+/* 아이디 선택자 */
+
+#demo {
+  border: red 2px solid;
+}
+
+/* 속성 선택자 */
+
+[lang="en"] {
+  font-family: Helvetica;
+  color: purple;
+}
+
+a[href^="https://"] {
+  background: url("../images/external-link.png") no-repeat 100% 0;
+	padding-right: 30px;
+}
+
+a[href$=".pdf"] {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+ul a {
+  text-decoration: none;
+  color: green;
+}
+
+/* 직계 자손 선택자 */
+/* ul > a {
+  text-decoration: none;
+  color: green;
+} */
