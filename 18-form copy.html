@@ -46,8 +46,27 @@
       <input type="file" name="user_data" id="user_data" />
       <!-- input을 file을 추가하려면 form 단락에 enctype="multipart-formdata"를 추가해줘야한다. -->
     </p>
+    <p><label for="user_search">검색<input type="search" name="user_search" id="user_search" /></p>
+    <p><label>이동할 웹주소<input list="url_ex" name="user_url" id="user_url" /></label>
+      <datalist id="url_ex">
+        <option value="http://naver.com">naver</option>
+        <option value="http://google.com">google</option>
+      </datalist>
+    </p>
+    <p><label>전화번호<input list="tel_ex" name="user_tel" id="user_tel" /></label>
+      <datalist id="tel_ex">
+        <option value="119">119</option>
+        <option value="112">112</option>
+        <option value="010-6818-3634">전서빈</option>
+        <option value="010-3396-6467">강진성</option>
+      </datalist>
+    </p>
+    <p><label for="user_email">이메일</label><input type="email" name="user_email" id="user_email"
+        placeholder="user@example.com" /></p>
     <input type="submit" value="전송">
     <button type="submit">버튼</button>
+    <input type="reset" value="초기화" />
+    <input type="hidden" name="using-ajax" value="true" />
   </form>
 
 </body>
